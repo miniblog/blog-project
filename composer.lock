@@ -109,12 +109,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/miniblog/engine.git",
-                "reference": "2c607c3d7271bd03a5adee215a69c556c8cd0430"
+                "reference": "d5c9e5bd65f47c8eba5f9b7797143fdf50635613"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miniblog/engine/zipball/2c607c3d7271bd03a5adee215a69c556c8cd0430",
-                "reference": "2c607c3d7271bd03a5adee215a69c556c8cd0430",
+                "url": "https://api.github.com/repos/miniblog/engine/zipball/d5c9e5bd65f47c8eba5f9b7797143fdf50635613",
+                "reference": "d5c9e5bd65f47c8eba5f9b7797143fdf50635613",
                 "shasum": ""
             },
             "require": {
@@ -150,7 +150,7 @@
                 "issues": "https://github.com/miniblog/engine/issues",
                 "source": "https://github.com/miniblog/engine/tree/main"
             },
-            "time": "2022-09-05T19:02:08+00:00"
+            "time": "2022-09-07T15:40:49+00:00"
         }
     ],
     "packages-dev": [],

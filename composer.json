@@ -1,6 +1,6 @@
 {
     "name": "miniblog/blog-project",
-    "description": "A project used to create an instance of Miniblog.",
+    "description": "This repo is used in conjunction with Composer to create an instance of Miniblog that can be version-controlled and customised.",
     "type": "project",
     "license": "ISC",
     "authors": [
@@ -15,6 +15,6 @@
         "miniblog/engine": "dev-main"
     },
     "scripts": {
-        "post-create-project-cmd": "Miniblog\\Engine\\ProjectInstaller::postCreateProjectCmd"
+        "post-create-project-cmd": "installer/install"
     }
 }

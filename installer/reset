@@ -1,0 +1,8 @@
+#!/usr/bin/env php
+<?php
+
+use Miniblog\BlogProject\InstallCommand;
+
+require __DIR__ . '/InstallCommand.php';
+
+(new InstallCommand(dirname(__DIR__)))->down();
