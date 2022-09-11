@@ -33,7 +33,7 @@ class InstallCommand
         ];
 
         $this->dirsToMake = [
-            // "{$this->projectDir}/templates",
+            "{$this->projectDir}/templates",
         ];
     }
 
