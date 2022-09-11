@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "944321fe63c064664356486090a4041d",
+    "content-hash": "d3d3aad3335cbb530697bc1d4757f712",
     "packages": [
         {
             "name": "danbettles/marigold",
@@ -12,12 +12,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/danbettles/marigold.git",
-                "reference": "f05576a6479dd87fb46a6c3dddd77e4d2a02d494"
+                "reference": "b348ac3434098d4243d05278f4bc24608afe6d70"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danbettles/marigold/zipball/f05576a6479dd87fb46a6c3dddd77e4d2a02d494",
-                "reference": "f05576a6479dd87fb46a6c3dddd77e4d2a02d494",
+                "url": "https://api.github.com/repos/danbettles/marigold/zipball/b348ac3434098d4243d05278f4bc24608afe6d70",
+                "reference": "b348ac3434098d4243d05278f4bc24608afe6d70",
                 "shasum": ""
             },
             "require": {
@@ -51,7 +51,7 @@
                 "issues": "https://github.com/danbettles/marigold/issues",
                 "source": "https://github.com/danbettles/marigold/tree/main"
             },
-            "time": "2022-09-05T18:24:01+00:00"
+            "time": "2022-09-11T06:41:19+00:00"
         },
         {
             "name": "erusev/parsedown",
@@ -109,16 +109,16 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/miniblog/engine.git",
-                "reference": "d5c9e5bd65f47c8eba5f9b7797143fdf50635613"
+                "reference": "975cbe6fe37dceb8180695f14d93805589dd999f"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miniblog/engine/zipball/d5c9e5bd65f47c8eba5f9b7797143fdf50635613",
-                "reference": "d5c9e5bd65f47c8eba5f9b7797143fdf50635613",
+                "url": "https://api.github.com/repos/miniblog/engine/zipball/975cbe6fe37dceb8180695f14d93805589dd999f",
+                "reference": "975cbe6fe37dceb8180695f14d93805589dd999f",
                 "shasum": ""
             },
             "require": {
-                "danbettles/marigold": "dev-main#f05576a6479dd87fb46a6c3dddd77e4d2a02d494",
+                "danbettles/marigold": "dev-main#b348ac3434098d4243d05278f4bc24608afe6d70",
                 "erusev/parsedown": "^1.7",
                 "php": "^7.4|^8.1.3"
             },
@@ -150,7 +150,7 @@
                 "issues": "https://github.com/miniblog/engine/issues",
                 "source": "https://github.com/miniblog/engine/tree/main"
             },
-            "time": "2022-09-07T15:40:49+00:00"
+            "time": "2022-09-11T07:02:50+00:00"
         }
     ],
     "packages-dev": [],
