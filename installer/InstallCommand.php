@@ -6,6 +6,7 @@ namespace Miniblog\BlogProject;
 
 use function array_reverse;
 use function passthru;
+use function strlen;
 
 class InstallCommand
 {
@@ -13,6 +14,8 @@ class InstallCommand
     private const ENGINE_PACKAGE_NAME = 'miniblog/engine';
 
     private string $projectDir;
+
+    private string $configFilePathname;
 
     /** @var array<string, string> */
     private array $thingsToCopy;
@@ -23,18 +26,35 @@ class InstallCommand
     public function __construct(string $projectDir)
     {
         $this->projectDir = $projectDir;
+        $this->configFilePathname = "{$this->projectDir}/config.php";
 
         $engineDir = "{$this->projectDir}/vendor/" . self::ENGINE_PACKAGE_NAME;
 
         $this->thingsToCopy = [
             "{$engineDir}/content/." => "{$this->projectDir}/content/",
             "{$engineDir}/public/." => "{$this->projectDir}/public/",
-            "{$engineDir}/config.php.dist" => "{$this->projectDir}/config.php",
+            "{$engineDir}/config.php.dist" => $this->configFilePathname,
         ];
 
         $this->dirsToMake = [
             "{$this->projectDir}/templates",
         ];
+    }
+
+    private function writeLn(string $message): void
+    {
+        // phpcs:ignore
+        echo "{$message}\n";
+    }
+
+    private function success(string $message = ''): void
+    {
+        $message = strlen($message) ? " {$message}" : '';
+
+        $blackOnGreen = "\033[30m\033[42m";
+        $noColour = "\033[0m";
+
+        $this->writeLn("\n{$blackOnGreen}[OK]{$message}{$noColour}\n");
     }
 
     public function up(): void
@@ -46,6 +66,8 @@ class InstallCommand
         foreach ($this->dirsToMake as $dirToMake) {
             passthru("mkdir --parents --verbose {$dirToMake} && touch {$dirToMake}/.gitignore");
         }
+
+        $this->success("Almost there.  Your next step is to customise `{$this->configFilePathname}`.");
     }
 
     public function down(): void
@@ -57,5 +79,7 @@ class InstallCommand
         foreach (array_reverse($this->thingsToCopy) as $destination) {
             passthru("rm --recursive --force --verbose {$destination}");
         }
+
+        $this->success();
     }
 }
