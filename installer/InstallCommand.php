@@ -31,8 +31,10 @@ class InstallCommand
         $engineDir = "{$this->projectDir}/vendor/" . self::ENGINE_PACKAGE_NAME;
 
         $this->thingsToCopy = [
+            "{$engineDir}/bin/." => "{$this->projectDir}/bin/",
             "{$engineDir}/content/." => "{$this->projectDir}/content/",
             "{$engineDir}/public/." => "{$this->projectDir}/public/",
+            "{$engineDir}/var/." => "{$this->projectDir}/var/",
             "{$engineDir}/config.php.dist" => $this->configFilePathname,
         ];
 
@@ -45,6 +47,15 @@ class InstallCommand
     {
         // phpcs:ignore
         echo "{$message}\n";
+    }
+
+    private function createHyperlink(string $url, string $label): string
+    {
+        $osc = "\033]";
+        $left = "{$osc}8;;";
+        $right = "\033\\";
+
+        return "{$left}{$url}{$right}{$label}{$left}{$right}";
     }
 
     private function success(string $message = ''): void
@@ -67,7 +78,12 @@ class InstallCommand
             passthru("mkdir --parents --verbose {$dirToMake} && touch {$dirToMake}/.gitignore");
         }
 
-        $this->success("Almost there.  Your next step is to customise `{$this->configFilePathname}`.");
+        $linkToInstructions = $this->createHyperlink(
+            'https://github.com/miniblog/engine/blob/main/README.md#method',
+            'the installation method'
+        );
+
+        $this->success("Almost there!  To finish up, check {$linkToInstructions}");
     }
 
     public function down(): void
