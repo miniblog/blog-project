@@ -1,6 +1,13 @@
 {
     "name": "miniblog/blog-project",
     "description": "This repo is used in conjunction with Composer to create a Miniblog blog that can be version-controlled and customised.",
+    "keywords": [
+        "blog",
+        "blogging",
+        "minimal",
+        "markdown",
+        "dead simple blog"
+    ],
     "type": "project",
     "license": "ISC",
     "authors": [
