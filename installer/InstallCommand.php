@@ -55,6 +55,7 @@ class InstallCommand
     private function createHyperlink(string $url, string $label): string
     {
         $osc = "\033]";
+
         $left = "{$osc}8;;";
         $right = "\033\\";
 
