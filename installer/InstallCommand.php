@@ -15,9 +15,7 @@ class InstallCommand
 
     private string $projectDir;
 
-    private string $configFilePathname;
-
-    /** @var array<string, string> */
+    /** @var array<string,string> */
     private array $thingsToCopy;
 
     /** @var string[] */
@@ -26,16 +24,13 @@ class InstallCommand
     public function __construct(string $projectDir)
     {
         $this->projectDir = $projectDir;
-        $this->configFilePathname = "{$this->projectDir}/config.php";
 
         $engineDir = "{$this->projectDir}/vendor/" . self::ENGINE_PACKAGE_NAME;
 
         $this->thingsToCopy = [
             "{$engineDir}/bin/." => "{$this->projectDir}/bin/",
-            "{$engineDir}/content/." => "{$this->projectDir}/content/",
+            "{$engineDir}/data/." => "{$this->projectDir}/data/",
             "{$engineDir}/public/." => "{$this->projectDir}/public/",
-            "{$engineDir}/var/." => "{$this->projectDir}/var/",
-            "{$engineDir}/config.php.dist" => $this->configFilePathname,
         ];
 
         $this->dirsToMake = [
@@ -83,8 +78,8 @@ class InstallCommand
         }
 
         $linkToInstructions = $this->createHyperlink(
-            'https://github.com/miniblog/engine/blob/main/README.md#method',
-            'the installation method'
+            'https://github.com/miniblog/engine/blob/main/doc/installation.md#quick-start',
+            'the installation instructions'
         );
 
         $this->success("Almost there!  To finish up, check {$linkToInstructions}");
