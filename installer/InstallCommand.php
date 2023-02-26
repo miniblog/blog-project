@@ -77,6 +77,8 @@ class InstallCommand
             passthru("mkdir --parents --verbose {$dirToMake} && touch {$dirToMake}/.gitignore");
         }
 
+        passthru("cd {$this->projectDir} && bin/console refresh");
+
         $linkToInstructions = $this->createHyperlink(
             'https://github.com/miniblog/engine/blob/main/doc/installation.md#quick-start',
             'the installation instructions'
