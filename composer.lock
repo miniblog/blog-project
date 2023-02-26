@@ -4,20 +4,20 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "d9cd7edca9e1875e28cab1103c5124f5",
+    "content-hash": "90334860f7e6e2d430292be2369d3b11",
     "packages": [
         {
             "name": "danbettles/marigold",
-            "version": "v2.3.2",
+            "version": "v2.4.0",
             "source": {
                 "type": "git",
                 "url": "https://github.com/danbettles/marigold.git",
-                "reference": "351c39fa97d4e2e35f7b7b4c7ebd24cfc295b46e"
+                "reference": "9062070afff1145fbab0977958fb0472b9394dd8"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/danbettles/marigold/zipball/351c39fa97d4e2e35f7b7b4c7ebd24cfc295b46e",
-                "reference": "351c39fa97d4e2e35f7b7b4c7ebd24cfc295b46e",
+                "url": "https://api.github.com/repos/danbettles/marigold/zipball/9062070afff1145fbab0977958fb0472b9394dd8",
+                "reference": "9062070afff1145fbab0977958fb0472b9394dd8",
                 "shasum": ""
             },
             "require": {
@@ -48,22 +48,22 @@
             "description": "Marigold is a small set of tools that aims to make building simple websites easier while remaining close to the metal and adding minimal overheads; it is not a framework.",
             "support": {
                 "issues": "https://github.com/danbettles/marigold/issues",
-                "source": "https://github.com/danbettles/marigold/tree/v2.3.2"
+                "source": "https://github.com/danbettles/marigold/tree/v2.4.0"
             },
-            "time": "2022-12-19T19:53:24+00:00"
+            "time": "2023-01-21T20:19:37+00:00"
         },
         {
             "name": "erusev/parsedown",
-            "version": "1.8.0-beta-7",
+            "version": "1.7.4",
             "source": {
                 "type": "git",
                 "url": "https://github.com/erusev/parsedown.git",
-                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955"
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/erusev/parsedown/zipball/fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
-                "reference": "fe7a50eceb4a3c867cc9fa9c0aa906b1067d1955",
+                "url": "https://api.github.com/repos/erusev/parsedown/zipball/cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
+                "reference": "cb17b6477dfff935958ba01325f2e8a2bfa6dab3",
                 "shasum": ""
             },
             "require": {
@@ -98,26 +98,26 @@
             ],
             "support": {
                 "issues": "https://github.com/erusev/parsedown/issues",
-                "source": "https://github.com/erusev/parsedown/tree/1.8.0-beta-7"
+                "source": "https://github.com/erusev/parsedown/tree/1.7.x"
             },
-            "time": "2019-03-17T18:47:21+00:00"
+            "time": "2019-12-30T22:54:17+00:00"
         },
         {
             "name": "miniblog/engine",
-            "version": "v1.0.0-beta.1",
+            "version": "v1.0.0-beta.14",
             "source": {
                 "type": "git",
                 "url": "https://github.com/miniblog/engine.git",
-                "reference": "8ff82a9d288c4b8e25c9d333f94cdcbc09bba42b"
+                "reference": "6fc62c3f56ca87d88bd212cb7eb5d035f8b84301"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/miniblog/engine/zipball/8ff82a9d288c4b8e25c9d333f94cdcbc09bba42b",
-                "reference": "8ff82a9d288c4b8e25c9d333f94cdcbc09bba42b",
+                "url": "https://api.github.com/repos/miniblog/engine/zipball/6fc62c3f56ca87d88bd212cb7eb5d035f8b84301",
+                "reference": "6fc62c3f56ca87d88bd212cb7eb5d035f8b84301",
                 "shasum": ""
             },
             "require": {
-                "danbettles/marigold": "^v2.3.2",
+                "danbettles/marigold": "^v2.4.0",
                 "erusev/parsedown": "^1.7",
                 "php": "^7.4|^8.1.3"
             },
@@ -141,10 +141,10 @@
             "authors": [
                 {
                     "name": "Daniel Bettles",
-                    "email": "danbettles@yahoo.co.uk"
+                    "email": "daniel@justathought.dev"
                 }
             ],
-            "description": "Miniblog is a minimal blogging system, written in object-oriented PHP, aimed primarily at developers.  There are no plugins or themes, and there is no complicated setup.  The focus is blogging.",
+            "description": "Miniblog is a minimal blogging platform, written in object-oriented PHP, aimed primarily at developers.  There is no complicated setup, no distracting admin area, and no plugins or themes: the focus is blogging.",
             "keywords": [
                 "blog",
                 "blogging",
@@ -154,16 +154,16 @@
             ],
             "support": {
                 "issues": "https://github.com/miniblog/engine/issues",
-                "source": "https://github.com/miniblog/engine/tree/v1.0.0-beta.1"
+                "source": "https://github.com/miniblog/engine/tree/v1.0.0-beta.14"
             },
-            "time": "2022-12-19T21:34:38+00:00"
+            "time": "2023-02-26T16:36:45+00:00"
         }
     ],
     "packages-dev": [],
     "aliases": [],
-    "minimum-stability": "beta",
+    "minimum-stability": "stable",
     "stability-flags": {
-        "miniblog/engine": 10
+        "miniblog/engine": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
